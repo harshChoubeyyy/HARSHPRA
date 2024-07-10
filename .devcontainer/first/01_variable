@@ -1,0 +1,16 @@
+const accountId=498498;
+let accountEmail="xtrs@gmail.com";
+var accountPass="174417";  // prefer not to use var because of its issue in block scope and functional scope
+accountCity="jaipur";
+
+//accountId=2;   // not allowed 
+console.log(accountId);
+
+accountEmail="hjghgh";
+accountPass="8963";
+accountCity="chennai";
+console.log(accountEmail);
+
+let accountState;
+console.table([accountEmail,accountId,accountPass,accountCity,accountState]);
+

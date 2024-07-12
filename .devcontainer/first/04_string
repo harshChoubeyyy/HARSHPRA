@@ -1,0 +1,4 @@
+const name="harsh";
+const repocount=40;
+//console.log(name+repocount+"value");
+console.log(`my name is ${name} and repo value is ${repocount}`);

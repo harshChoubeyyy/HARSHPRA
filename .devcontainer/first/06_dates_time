@@ -1,0 +1,22 @@
+// let myDate=new Date();
+// console.log(myDate);
+// console.log(myDate.toString());
+// console.log(typeof(myDate));
+
+// const mycreateddate=new Date(2024,0,24);
+// console.log(mycreateddate);
+
+let mycreatedDate=new Date("2024-04-26");
+// console.log(mycreatedDate.toLocaleString());'
+
+
+//********Times*******************
+
+let myTimeStamp=Date.now();
+// console.log(myTimeStamp);
+// console.log(mycreatedDate.getTime());
+console.log(Math.round(Date.now()/1000));
+
+let newDate=new Date();
+console.log(newDate);
+console.log(newDate.getMonth());

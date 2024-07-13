@@ -1,0 +1,14 @@
+// const arr1=["x","t","s"];
+// const arrr2=["g","t","k"];
+// // arr1.push(arrr2)
+// // console.log(arr1);
+// const third=arr1.concat(arrr2);
+// console.log(third);
+
+// const naya=[...arr1,...arrr2];// we prefer this syntax more because it can attach more array
+// console.log(naya);
+
+
+const arr1=[1,2,3,[7,8,9],[6,4],[1,2],[3,3]];
+const good=arr1.flat(Infinity);
+console.log(good);

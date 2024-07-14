@@ -1,0 +1,56 @@
+/* object ko do tarah se define karte hai ek literal ke tarah or ek constructor ki tarah*/
+
+/* singleton== koi v constructor bnate hai to singleton ek object banta hai  jb hum literal ke tarah bnate hai **tab singleton nhi bnta hai*** or 
+jab constructor se bnate hai to wo singleton bnta hai uske multiple instances bante hai*/
+
+
+// singleton
+//object literal
+
+// const jsUser = {} // bn gya object
+// object.create is method se  v object bnate hai isi ko bola jata hai constructor method isi me literal*singleton* bnte hai
+
+//**********************
+// waay to declare a symbol
+const mysym=Symbol("key1");
+
+// question is to use the symbol key in any object
+// use the variable name as in square bracket it is the syntax of the symbol
+
+const jsUser = {
+    // object has key and value like name is key and harsh is value
+    name:"Harsh",
+    "Full name":"Choubey",
+    [mysym]:"kyalikhu",
+    age:18,
+    location:"jharkhand",
+    email:"choubey@gmailcom",
+    is_loggedin:"false",
+    lastlogginDays:["monday","saturday","sunday","tuesday"]
+}
+// console.log(jsUser.email);
+// console.log(jsUser["email"]);
+// console.log(jsUser["age"]);
+// console.log(jsUser[mysym]);
+// console.log(typeof jsUser.mysym);
+console.log(jsUser["Full name"])
+
+// console.log(typeof mysym);
+
+// object ki value ko change 
+jsUser.email="harsh@gmail.com";
+// to lock the value of any object so that no one is able too change the value
+// Object.freeze(jsUser);
+// console.log(jsUser)
+
+
+// function in object
+jsUser.greeting=function(){
+    console.log("Hello js User");
+}
+console.log(jsUser.greeting());
+
+jsUser.greetingtwo=function(){
+    console.log(`Hello js User, ${this.name}`);
+}
+console.log(jsUser.greetingtwo());

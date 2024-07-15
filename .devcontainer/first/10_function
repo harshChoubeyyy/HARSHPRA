@@ -1,0 +1,53 @@
+// resources for the better inderstanding of the json api
+// json formatter
+//json formatter.org
+
+// way to declare a function
+function saymyname(){
+    console.log("H");
+    console.log("A");
+    console.log("R");
+    console.log("S");
+    console.log("H");
+}
+// saymyname();
+
+// function addtwonum(number1/*here paramter is passed*/,number2){
+//     console.log(number1+number2);
+// }
+// addtwonum(3,4);//here arguments is passed
+
+function addtwonum(number1/*here paramter is passed*/,number2){
+//   let res=number1+number2;
+//   return res;
+// }
+// const result=addtwonum(3,4);
+// console.log("Result",result);
+
+// function loginusermessage(username){
+//     return `${username} just logged in`
+// }
+// console.log(loginusermessage("harsh"));
+// function loginusermessage(username){
+//     if(!username){
+//         console.log("please enter the name");
+//         return;
+//     }
+//     return `${username} just logged in`
+}
+// console.log(loginusermessage("harsh"));
+// console.log(loginusermessage());
+
+
+/*****************shopping card style*****************************/
+// ... it is known as rest or spread operator
+function calculatecartprice(...nums1){
+    return nums1;
+
+}
+// console.log(calculatecartprice(200,300,400,800));
+
+const user={
+username:"harsh",
+price:199
+}

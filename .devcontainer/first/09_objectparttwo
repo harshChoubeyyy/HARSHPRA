@@ -1,0 +1,56 @@
+// singleton object
+//objectmake through constructor
+
+//const tinderUser=new Object(); way to declare an object this is singleton object
+const tinderUser={}// another way to declare an object non singleton object
+tinderUser.id="1234avvbs"
+tinderUser.name="Aryan"
+tinderUser.isloggedin=false
+//console.log(tinderUser);
+
+
+const regularUser={
+    email:"choubey@gmail.com",
+    fullname:{
+        userfullname:{
+            firstname:"Harsh",
+            lastname:"Choubey"
+        }
+    }
+}
+//console.log(regularUser.fullname.userfullname.firstname);
+
+// merge the object
+const obj1={1:"a",2:"b"};
+const obj2={3:"c",4:"d"};
+//const obj3={obj1,obj2}
+//const obj3=Object.assign({},obj1,obj2)
+const obj3={...obj1,...obj2}
+console.log(obj3);
+
+// database me array me object create hota hai
+
+const user=[
+    {
+        id:1,
+        email:"hgnail.com"
+    },
+    {
+        id:2,
+        email:"pgail.com"
+    },
+    {
+        id:3,
+        email:"dgmail.coom"
+    },
+    {
+        id:4,
+        email:"tgmail.com   "
+    }
+]
+console.log(user[1].email);
+
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
+console.log(tinderUser.hasOwnProperty('islogged'));

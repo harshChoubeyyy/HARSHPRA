@@ -1,0 +1,54 @@
+// browser ke andar window global object hota hai islye console this karne par window dikhta hai
+
+// function chai(){
+//     const username="Harsh";
+//     console.log(this.username);
+// }
+// chai();  give result undefined it not use this function
+
+// const ab=function chai(){
+//     const username="Harsh";
+//     console.log(this.username);
+// }
+// ab(); give result undefined it not use this function
+
+// const chai = () => {
+//     const username="Harsh";
+//         console.log(this.username);
+// }
+// chai();  give result undefined it not use this function
+
+
+///*****************Arrow function*************************** */
+
+// const addtwo=(num1,num2)=>{
+// return (num1+num2) explicit return
+// }
+// console.log(addtwo(4,8));  simple arrow function
+
+// implicit return method
+// const addtwo=(num1,num2)=> num1+num2
+// console.log(addtwo(4,8));
+
+// const addtwo=(num1,num2)=> (num1+num2)
+
+//****************agar object return karna ho to () me wrap krna hi hoga*************************** */
+
+// const addtwo=()=>({username:"Harsh"})
+// console.log(addtwo());
+
+//**********immediatly invoked function expression*************** */
+// jab hum chahte hai ki hmara function ya fir scope ke andar turant jo v file create ho wo database se connect ho jaye uske liye iife us ekarte hai
+
+(function chai(){//named iife
+    console.log("DB connected")
+})();    // small parenthesis lga denge to ho jayegaa
+
+/* gobal scope ke pollution se problem hoti hai kai bar to uss global scope se
+to us global scope ke jo v variable hai un sbko  g=hatane ke liye hum iife ka use karte hai*/
+// isko end karne ke liye semicolon ka use karte hai
+
+
+((name)=>{ // unnamed iife
+console.log(`name is ${name}`)
+})("Harsh");
